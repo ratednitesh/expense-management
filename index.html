@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- logo -->
+    <link rel="title icon" type="image/png" href="img/logo.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Expenses Management</title>
+</head>
+
+<body>
+
+    <section id="top">
+        <h2 class="heading center">Available Budget in <span class="month">January</span></h2>
+        <div class="budget-value center">
+            <h1 id="total-budget">+2345.34</h3>
+        </div>
+
+        <div class="budget-detail ">
+            <div class="budget-income  mb-3 pt-3 row">
+                <div class="div-heading col-lg-6 col-sm-5">Income</div>
+                <div class="div-value-per col-lg-6 col-sm-7">
+                    <div class="div-value total-budget-income">+4236.00</div>
+
+                </div>
+
+            </div>
+            <div class="budget-expenses  mb-3 pt-3 row">
+                <div class="div-heading col-lg-6 col-sm-5">Expenses</div>
+                <div class="div-value-per col-lg-6 col-sm-7">
+                    <div class="div-value total-budget-expense">-1456.00</div>
+                    <span class="badge percent-rise total-budget-expense-percentage">45%</span>
+                </div>
+
+            </div>
+
+    </section>
+    <section id="form-fill" class="container-fluid">
+
+        <div class="row justify-content-center">
+            <div class="col-sm-1 pb-3 center">
+
+                <select class="add__type green">
+                    <option value="inc" selected>+</option>
+                    <option value="exp">-</option>
+                </select>
+            </div>
+            <div class="col-sm-5 pb-3 center">
+                <input type="text" class="add__description green" placeholder="Add description">
+
+            </div>
+            <div class="col-sm-3 pb-3 center"> <input type="number" class="add__value green" placeholder="Value">
+                <button class="add__btn"><i class="fas fa-check-circle fa-3x green-btn"></i></button> </div>
+        </div>
+
+    </section>
+    <section class=" container-fluid">
+        <div class="row justify-content-center mx-5 item--container" id="detail-list">
+            <div class="col-sm-4 mx-1 " id="income-list">
+                <h4 class="center">Income</h1>
+
+                    <ul class="income__list list-group">
+                        <!-- <li class="item list-group-item" id="income-0">
+                            <div class="item__description">Salary</div>
+
+                            <div class="item__value">+ 2,100.00</div>
+                            <div class="item__delete">
+                                <button class="item__delete--btn"><i class="fa fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </div>
+
+                        </li>
+                        <li class="item list-group-item" id="income-1">
+                            <div class="item__description">Sell Car</div>
+
+                            <div class="item__value">+ 5,400.00</div>
+                            <div class="item__delete">
+                                <button class="item__delete--btn"><i class="fa fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </div>
+
+                        </li> -->
+
+                    </ul>
+            </div>
+            <div class="col-sm-4 mx-1 center" id="expense-list">
+                <h4>Expenses</h1>
+
+                    <ul class="expense__list list-group">
+                        <!-- <li class="item list-group-item" id="expense-0">
+                            <div class="item__description">Salary</div>
+
+                            <div class="item__value">+ 2,100.00</div>
+                            <div class="percentage-item"><span>14%</span></div>
+                            <div class="item__delete">
+                                <button class="item__delete--btn"><i class="fa fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </div>
+
+                        </li>
+                        <li class="item list-group-item" id="expense-1">
+                            <div class="item__description">Sell Car</div>
+
+                            <div class="item__value">+ 5,400.00</div>
+                            <div class="percentage-item"><span>56%</span></div>
+                            <div class="item__delete">
+                                <button class="item__delete--btn"><i class="fa fa-trash"
+                                        aria-hidden="true"></i></button>
+                            </div>
+
+                        </li> -->
+
+                    </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

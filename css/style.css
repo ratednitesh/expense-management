@@ -1,0 +1,289 @@
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 14px;
+    background-color: rgb(248, 255, 247);
+}
+
+#top {
+    background-image: linear-gradient(rgba(228, 238, 250, 0.644), rgba(0, 0, 0, 0.95)), url(../img/back.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40%;
+    padding-top: 1%;
+
+}
+
+.heading{
+    color: rgb(0, 0, 0);
+}
+.center {
+    text-align: center;
+  
+    font-weight: 800;
+
+}
+
+.month {
+    font-size: 110%;
+    font-weight: bolder;
+
+    color: rgb(184, 63, 59)
+}
+
+.budget-value {
+    color: rgb(250, 250, 250);
+    letter-spacing: 2px;
+    font-size: 80%
+}
+
+.budget-detail {
+
+
+    width: 30%;
+    margin: 0 auto;
+}
+
+.budget-income,
+.budget-expenses {
+    color: rgb(255, 254, 254);
+    text-transform: uppercase;
+    height: 50px;
+    padding-left: 3%;
+    border-radius: 20px;
+    font-weight: 100;
+    font-size: 120%
+}
+
+.budget-income {
+    background-color: rgb(78, 109, 60);
+
+
+}
+
+.budget-expenses {
+    background-color: rgb(221, 75, 75);
+
+}
+
+.div-heading {
+    font-weight: lighter;
+    letter-spacing: 3px;
+
+}
+
+.div-value {
+    float: left;
+
+    letter-spacing: 3px;
+}
+
+.percent-rise {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: right;
+    border-radius: 3px;
+    font-size: 60%;
+    font-weight: bold;
+    float: left;
+
+}
+
+
+#form-fill{
+    min-height: 80px;
+    background-color: rgb(214, 214, 214);
+    padding-top: 20px;
+}
+
+
+.add__type {
+    width: 55px;
+    border: 1px solid #e7e7e7;
+    height: 44px;
+    font-size: 18px;
+    color: inherit;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    font-weight: 300;
+    transition: border 0.3s;
+}
+
+
+.add__description,
+.add__value {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+
+.add__description{
+    width: 80%;
+}
+
+.add__value {
+    width:30%;
+    text-align: left;
+}   
+    
+.add__btn{
+   
+    background: none;
+    border: none;
+   
+    display: inline-block;
+    vertical-align: middle;
+    
+    margin-left: 10px;
+    
+
+    
+}
+
+
+#detail-list{
+    min-height: 80px;
+   
+    padding-top: 40px;
+   
+
+}
+
+#income-list, #expense-list{
+ 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+
+}
+
+
+#income-list h4, #expense-list h4{
+  
+    border-bottom: 2px solid rgb(99, 95, 95);
+
+}
+
+.green:focus{
+    outline-color:rgb(78, 109, 60);
+    border: 1px solid rgb(78, 109, 60) !important;
+}
+
+.green-btn{
+    
+    color:rgb(78, 109, 60);
+}
+
+.red:focus{
+    outline-color: rgb(221, 75, 75);
+    border: 1px solid  rgb(221, 75, 75) !important;
+}
+
+.red-btn{
+    
+    color: rgb(221, 75, 75);
+}
+
+#income-list{
+    color: rgb(40, 90, 71);
+} #expense-list{
+    color: rgb(182, 52, 52);
+}
+.item{
+    display: table;
+    margin-bottom: 10px;
+}
+.item__description, .item__value, .item__delete{
+    display: table-cell;
+}
+
+
+.item__delete--btn{
+
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+}
+
+#income-list .item{
+    background: rgb(214, 240, 201);
+    border-radius: 5px;
+}
+#expense-list .item{
+    background: rgb(240, 201, 201);
+    border-radius: 5px;
+}
+
+#income-list .item:hover{
+    background: rgb(96, 150, 69);
+    color: rgb(240, 227, 227);
+}
+
+#expense-list .item:hover{
+    background: rgb(255, 96, 96);
+    color: white;
+}
+.item:hover .item__delete--btn {
+     display: block;
+
+    }
+
+    .add__btn:focus   ,.item__delete--btn:focus{
+        outline: none;
+    }
+
+    .percentage-item{
+        background-color: rgba(122, 72, 72, 0.322);
+        border-radius: 10px;
+    }
+/************** small screen ***********************/
+
+
+@media only screen and (max-width: 1200px) {
+    .budget-detail {
+        width: 40%;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .heading,
+    .month {
+        font-size: 25px !important;
+    }
+
+    .budget-detail {
+        width: 55%;
+        font-size: 90%;
+        text-align: center;
+    }
+
+    .div-value {
+        float: none;
+    }
+
+
+    .percent-rise {
+        margin-left: 0px;
+
+
+    }
+
+    .budget-income,
+    .budget-expenses {
+
+        font-size: 90%;
+    }
+}
